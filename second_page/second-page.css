@@ -1,0 +1,367 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.nav-bar{
+    height: 14vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 19% 34% 15%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10;
+    }
+    .logo-img{
+        height: 40%;
+        padding-left: 3.4vw;
+    }
+    .logo-img>img{
+        height: 100%;
+        width: 100%;
+    }
+    .lie>ol{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        margin-left: -9vw;
+        font-size: 12px;
+    }
+    .lie>ol>li{
+       height: 6vh;
+       width: 6vw;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .lie>ol>li:hover{
+        background-color:rgb(102, 16, 242);
+        cursor: pointer;
+        border-radius: 50px;
+        color: white;
+    }
+    .aaa{
+        border-radius: 50px;
+        color: white;
+        background-color: rgb(102, 16, 242);
+        position: relative;
+    }
+    .home-dropdown{
+        position: absolute;
+        height: 34vh;
+        width: 15vw;
+        border: 3px solid rgb(255, 50, 113);
+        top: 15vh;
+        color: gray;
+        left: 4%;
+        background-color: white;
+        visibility: hidden;
+    }
+    .home-dropdown>h6{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+        padding-left: 1.5vw;
+        padding-top: 2.68vh;
+        font-size: 14px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.678);
+    }
+    .header{
+        border-bottom: none !important;
+    }
+    .lie>ol>li:hover .home-dropdown{
+      visibility: visible !important;
+      cursor: pointer;
+      transition-duration: 1.5s;
+      top: 10vh;
+    }
+    .icon-one{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        left: 78vw;
+        margin-left: -2vw;
+    }
+    .icon{
+        height: 5vh;
+        width: 2.3vw;
+        border-radius: 50px;
+        background-color: rgb(255, 50, 113);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-left: .5vw;
+    }
+    .icon:hover{
+        transition-property: all;
+        transition-duration: 1s;
+        transform: rotate(360deg);
+        cursor: pointer;
+    }
+    /* <!-- --------------first-section------------- --> */
+    .second-main{
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows:  50vh 50vh 50vh 50vh 50vh;
+    }
+    .second-one{
+     grid-row: 1/3;
+     grid-column: 1/3;
+     position: relative;
+     overflow: hidden;
+    }
+    .second-one>img{
+        height: 100%;
+        width: 100%;
+    }
+    .second-one>img:hover{
+     transition-property: all;
+     transform: scale(1.1) rotate(3deg);
+     transition-duration: 1s;
+    }
+    .second-one>h1{
+        font-weight: 700;
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+    }
+    .second-one>:hover{
+        color: rgb(255, 50, 114);
+        cursor: pointer;
+    }
+    .second-one>button{
+        height: 10vh;
+        position: absolute;
+        width: 15vw;
+        left: 15%;
+        top: 75%;
+        background-color: rgb(255, 50, 114);
+        color: white;
+        font-weight: 900;
+        border-radius: 50px;
+        border: none;
+        font-size: 18px;
+        /* z-index: 10; */
+
+    }
+    .second-one>button:hover{
+        border: 2px solid rgb(255, 50, 114);
+        background-color: transparent;
+    }
+/* ------------------after-before----- */
+    .second{
+    overflow: hidden;
+    z-index: 8;
+    position: relative;
+    }
+  
+    .second>img{
+        height: 100%;
+        width: 100%;
+    }
+    .second>img:hover{
+        transition-property: all;
+        transform: scale(1.1) rotate(3deg);
+        transition-duration: 1s;
+    }
+    .second1::after{
+        height: 25%;
+        width: 50%;
+        z-index: 5;
+        content: '';
+         background-color: #ff326fe5;
+         position: absolute;
+         top: 40%;
+         left: -50%;
+         transition-duration: 1s; 
+         visibility: hidden;
+         /* overflow: hidden; */
+        }
+        .second1:hover::after{
+            visibility: visible;
+            left: 0%;
+        }
+        .second1::before{
+            content: "";
+            height: 25%;
+            width: 50%;
+            background-color: black;
+            position: absolute;
+            top: 40%;
+            left: 100%;
+            transition-duration: 1s;
+            z-index: 5;
+            visibility: hidden;
+        }
+        .second1:hover::before{
+            visibility: visible;
+            left: 50%;
+        }
+        .icon-o{
+            height: 7vh;
+            width: 5vw;
+            background-color: white;
+            color: rgb(255, 50, 114);
+            position: absolute;
+            top: 80%;
+            left: 56%;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 3vh;
+            border-radius: 15px;
+            visibility: hidden;
+        }
+        .icon-to{
+            position: absolute;
+            left: 25%;
+            top: 80%;
+        }
+        .icon-o:hover{
+         background-color: black;
+         transition-duration: 1s;
+        }
+        .second1:hover .icon-o{
+         visibility: visible;
+         top: 42%;
+         z-index: 8;
+         transition-duration: 1s;
+        }
+
+/* ------------------after-before----- */
+
+    .head{
+        background-size: 100% 100% !important;
+        color: white;
+}
+.head>h1{
+     position: absolute;
+       top: 0%;
+       font-size: 60px;
+       margin:35% 0 0 10% ;
+    }
+    .second-eleven>h1{
+        font-size: 54px;
+    }
+.second-seven>h1{
+    font-size: 44px;
+    margin: 20px 0 0 10%;
+}
+.second-seven>p{
+    color: white;
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    font-size: 25px;
+    line-height: 35px;
+    margin:35% 0 0 10% ;
+}
+    .second-eight{
+        grid-column: 3/5;
+    }
+    .second-nine{
+        grid-column: 1/3;
+    }
+    .second-thirteen>h1{
+        color: white;
+        position: absolute;
+        top: 0%;
+        width: 80%;
+        font-size: 50px;
+        line-height: 35px;
+        margin:75% 0 0 20% ;
+    }
+    .speakeer{
+        color: rgb(255, 50, 114);
+        position: absolute;
+        top: 0%;
+        height: 10vh;
+        width: 8vw;
+        font-size: 80px;
+        margin:40% 0 0 35% ;
+        z-index: 10;
+    }
+    .second-fourteen{
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.726),rgba(255, 255, 255, 0.733)),url(./images/14.jpg);
+        background-size: 100% 100% !important;
+        grid-column: 3/5;
+    }
+
+    .second>img:hover{
+        transform: scale(1.1) rotate(3deg);
+        cursor: pointer;
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) !important;
+    }
+    .colem>h1{
+        height: 10vh;
+        width: 15%;
+        font-size: 100px;
+       margin: 10vh 0 0 5vw;          
+    }
+    .second-fourteen>p{
+        width: 70%;
+        font-weight: 900;
+        font-size: 25px;
+        margin: 1vh 0 0 8vw;
+    }
+    .second-fourteen>h1{
+        font-weight: 400;
+       margin: 5vh 0 0 32vw; 
+    }
+    /* ------------------footer--------- */
+.forth{
+    height: 50vh;
+    width: 100%;
+    background-color:rgb(240, 248, 255) ;
+    display: grid;
+    justify-content: center;
+    /* margin-top: 25vh; */
+}
+.imglast{
+    height:10vh;
+    width: 70%;
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+.imglast>img{
+    height: 100%;
+    width: 100%;
+}
+.para>p{
+    margin-top: -12vh;
+    font-size: 18px;
+}
+.lasticon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 42vw;
+    margin-top: 35vh;
+}
+.icon{
+    height: 5vh;
+    width: 2.3vw;
+    border-radius: 50px;
+    background-color: rgb(255, 50, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: .5vw;
+}
+.icon:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+/* ------------------footer--------- */

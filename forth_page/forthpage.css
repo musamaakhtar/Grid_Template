@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /* border: 1px solid #000; */
+}
+.nav-bar{
+    height: 14vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 19% 34% 15%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10;
+    }
+    .logo-img{
+        height: 40%;
+        padding-left: 3.4vw;
+    }
+    .logo-img>img{
+        height: 100%;
+        width: 100%;
+    }
+    .lie>ol{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-evenly;
+        margin-left: -9vw;
+        font-size: 12px;
+    }
+    .lie>ol>li{
+       height: 6vh;
+       width: 6vw;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .lie>ol>li:hover{
+        background-color:rgb(102, 16, 242);
+        cursor: pointer;
+        border-radius: 50px;
+        color: white;
+    }
+    .aaa{
+        border-radius: 50px;
+        color: white;
+        background-color: rgb(102, 16, 242);
+        position: relative;
+    }
+    .home-dropdown{
+        position: absolute;
+        height: 34vh;
+        width: 15vw;
+        border: 3px solid rgb(255, 50, 113);
+        top: 15vh;
+        color: gray;
+        left: 4%;
+        background-color: white;
+        visibility: hidden;
+    }
+    .home-dropdown>h6{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+        padding-left: 1.5vw;
+        padding-top: 2.68vh;
+        font-size: 14px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.678);
+    }
+    .header{
+        border-bottom: none !important;
+    }
+    .lie>ol>li:hover .home-dropdown{
+      visibility: visible !important;
+      cursor: pointer;
+      transition-duration: 1.5s;
+      top: 10vh;
+    }
+    .icon-one{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        left: 78vw;
+        margin-left: -2vw;
+    }
+    .icon{
+        height: 5vh;
+        width: 2.3vw;
+        border-radius: 50px;
+        background-color: rgb(255, 50, 113);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-left: .5vw;
+    }
+    .icon:hover{
+        transition-property: all;
+        transition-duration: 1s;
+        transform: rotate(360deg);
+        cursor: pointer;
+    }
+    /* <!-- --------------first-section------------- --> */
+    .second{
+      height: 85vh;
+      width: 100%;
+      background-image: url(./images/1-1.jpg);
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .second>h1{
+        height: 15vh;
+        width: 50vw;
+        font-size: 78px;
+        background-color: white;
+        border: 2px solid white;
+    }
+    .second>p{
+        font-size: 20px;
+        color: white;
+        margin-top: 7vh;
+    }
+    .second1{
+        background-image: url(./images/2-1.jpg);
+    }
+    .second2{
+        background-image: url(./images/3-1.jpg);
+    }
+    .second2>h1{
+        width: 68vw;
+    }
+    .second3{
+        background-image: url(./images/4-1.jpg);
+    } .second4{
+        background-image: url(./images/5.jpg);
+    } .second5{
+        background-image: url(./images/6.jpg);
+    }
+    .second5>h1{
+        width: 72vw;
+    }
+     /* ------------------footer--------- */
+.forth{
+    height: 50vh;
+    width: 100%;
+    background-color:rgb(240, 248, 255) ;
+    display: grid;
+    justify-content: center;
+    /* margin-top: 25vh; */
+}
+.imglast{
+    height:10vh;
+    width: 70%;
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+.imglast>img{
+    height: 100%;
+    width: 100%;
+}
+.para>p{
+    margin-top: -12vh;
+    font-size: 18px;
+}
+.lasticon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 42vw;
+    margin-top: 35vh;
+}
+.icon{
+    height: 5vh;
+    width: 2.3vw;
+    border-radius: 50px;
+    background-color: rgb(255, 50, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-left: .5vw;
+}
+.icon:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+/* ------------------footer--------- */
